@@ -10520,7 +10520,7 @@ function validateHrp(hrps, address, condition, isBech32M) {
             if (decoded && condition(decoded)) {
                 return true;
             }
-        } catch {
+        } catch (err) {
             continue;
         }
     }
